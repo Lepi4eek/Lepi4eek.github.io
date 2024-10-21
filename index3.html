@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkibidiClicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0fff0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6ccf6e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #6ccf6e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SkibidiClicker</h1>
+        <nav>
+            <a href="#home" onclick="showPage('home')">Home</a>
+            <a href="#skibidi" onclick="showPage('skibidi')">SkibidiClicker</a>
+        </nav>
+    </header>
+
+    <div class="container" id="skibidi">
+        <h2>SkibidiClicker Prototype</h2>
+        <img src="SkibidiClicker.png" alt="SkibidiClicker Image" />
+        <video controls style="max-width: 100%; height: auto;">
+            <source src="SkibidiClicker.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h3>Project Highlights:</h3>
+        <ul>
+            <li>In this project I created a prototype of CookieClicker called SkibidiClicker.</li>
+            <li>In this project I add some challenges including statistic of clicks per minute and also grandma that helps you make some cookie.</li>
+            <li>Just enjoy clicking on that Skibidi guy!</li>
+        </ul>
+    </div>
+
+    <footer>
+        <button onclick="toggleContactForm()">Contact Me</button>
+        <div class="contact-form" id="contact-form" style="display: none;">
+            <h3>Contact Form</h3>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(page) {
+            const skibidi = document.getElementById('skibidi');
+            skibidi.style.display = page === 'skibidi' ? 'block' : 'none';
+        }
+
+        function toggleContactForm() {
+            const form = document.getElementById('contact-form');
+            form.style.display = form.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Initialize to show SkibidiClicker page
+        showPage('skibidi');
+    </script>
+</body>
+</html>
