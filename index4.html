@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xcode Apps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0fff0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6ccf6e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .video-container {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .description {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mark F</h1>
+        <nav>
+            <a href="#home" onclick="showPage('home')">Home</a>
+            <a href="#xcode-apps" onclick="showPage('xcode-apps')">Xcode Apps</a>
+            <a href="index2.html">Keep Going With Apps</a>
+            <a href="index3.html">SkibidiClicker</a>
+        </nav>
+    </header>
+
+    <div class="container" id="xcode-apps">
+        <!-- BMW Login App -->
+        <h2>BMW Login</h2>
+        <div class="video-container">
+            <img src="bmw.png" alt="BMW Login App Screenshot">
+        </div>
+        <div class="video-container">
+            <video controls style="max-width: 80%; height: auto;">
+                <source src="bmw.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- CarForSale App -->
+        <h2>CarForSale</h2>
+        <div class="video-container">
+            <img src="jeep.png" alt="CarForSale App Jeep Image 1">
+        </div>
+        <div class="video-container">
+            <img src="jeep2.png" alt="CarForSale App Jeep Image 2">
+        </div>
+        <div class="video-container">
+            <video controls style="max-width: 80%; height: auto;">
+                <source src="jeep.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Description -->
+        <div class="description">
+            <p><strong>•</strong> The brand new BMW Login app represents a login and sign-up screen for managing your BMW vehicle. Be sure to put your information correctly and keep your BMW in good condition!</p>
+            <p><strong>•</strong> The CarForSale app allows you to buy the car of your dreams! Select the quantity of your desired vehicle and ensure that your personal information is correct, so we can deliver your car to you. Don't worry, you won't be scammed!</p>
+            <p><strong>•</strong> Have fun with these apps!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Mark F. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(page) {
+            const xcodeApps = document.getElementById('xcode-apps');
+            xcodeApps.style.display = page === 'xcode-apps' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
