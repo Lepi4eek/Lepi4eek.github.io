@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalProject1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0fff0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6ccf6e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #6ccf6e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .description {
+            background-color: #f0f8ff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FinalProject1 - Car News App</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#app">Car News App</a>
+        </nav>
+    </header>
+
+    <div class="container" id="app">
+        <h2>Introducing the Brand New Car News App!</h2>
+
+        <!-- Display images -->
+        <img src="app.png" alt="App Image 1">
+        <img src="app2.png" alt="App Image 2">
+
+        <!-- Display video -->
+        <video controls>
+            <source src="app.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Description -->
+        <div class="description">
+            <h3>App Features:</h3>
+            <ul>
+                <li>The brand new app about car news!</li>
+                <li>Be free to learn more news from this app by clicking on the button "Let's check some news!"</li>
+                <li>If you're tired of logging in every time you visit other sites or apps... Now you can just click on a slider and be signed in automatically! Isn't that great?</li>
+                <li>And don't even think about buying that new Tesla Cybertruck! (just kidding)</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="alert('Let\'s check some news!')">Let's check some news!</button>
+    </footer>
+
+    <script>
+        // You can add any JavaScript here if needed
+    </script>
+</body>
+</html>
