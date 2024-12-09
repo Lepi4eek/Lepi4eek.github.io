@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0fff0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6ccf6e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #45a049;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #6ccf6e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .description {
+            background-color: #f0f8ff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Final Project 3 - Car News App</h1>
+        <nav>
+            <a href="previous_page.html">&larr; Previous</a>
+            <a href="next_page.html">Next &rarr;</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Introducing the Latest Updates to Our Car News App!</h2>
+
+        <!-- Display images -->
+        <img src="apple.png" alt="Apple 1">
+        <img src="apple2.png" alt="Apple 2">
+        <img src="apple3.png" alt="Apple 3">
+
+        <!-- Display video -->
+        <video controls>
+            <source src="apple.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Description -->
+        <div class="description">
+            <h3>What's New:</h3>
+            <ul>
+                <li>• Introducing a new update to our Car News app!</li>
+                <li>• We finally added arrows so you can freely move through all pages to check news by clicking on the arrows at the top left or top right!</li>
+                <li>• Added a final page with two buttons—go ahead and check it out!</li>
+                <li>• If you want to support our app, we’ve added special pages for it!</li>
+                <li>• That’s all for this update. Stay tuned for more!</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="alert('Thank you for supporting us!')">Support Us</button>
+        <button onclick="alert('Stay tuned for more updates!')">Learn More</button>
+    </footer>
+</body>
+</html>
